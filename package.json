@@ -1,0 +1,12 @@
+{
+    "scripts": {
+        "run": "npm start",
+        "start": "clava -c Clava-Options",
+        "prestart": "npm run build",
+        "build": "tsc",
+        "clean": "rm -r ./dist"
+    },
+    "dependencies": {
+        "typescript": "^4.4.3"
+    }
+}

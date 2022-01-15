@@ -1,3 +1,12 @@
+##### User-added #####
+# Clava config
+dist/
+woven_code/
+
+# Extensions
+ltex.dictionary.*
+######################
+
 # Logs
 logs
 *.log
