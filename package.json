@@ -3,7 +3,7 @@
         "run": "npm start",
         "start": "clava -c Clava-Options",
         "prestart": "npm run build",
-        "build": "tsc",
+        "build": "tsc && cp src/*.lara dist/",
         "clean": "rm -r ./dist"
     },
     "dependencies": {
