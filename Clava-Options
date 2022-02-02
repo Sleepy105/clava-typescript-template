@@ -89,7 +89,7 @@
     </entry>
     <entry>
       <string>aspect</string>
-      <file>aspects/main.lara</file>
+      <file>dist/main.mjs</file>
     </entry>
     <entry>
       <string>parsingNumThreads</string>
@@ -123,7 +123,7 @@
     </entry>
     <entry>
       <string>debug</string>
-      <boolean>false</boolean>
+      <boolean>true</boolean>
     </entry>
     <entry>
       <string>Disable Clava Info</string>
@@ -151,7 +151,7 @@
     </entry>
     <entry>
       <string>verbose</string>
-      <org.lara.interpreter.joptions.config.interpreter.VerboseLevel>warnings</org.lara.interpreter.joptions.config.interpreter.VerboseLevel>
+      <org.lara.interpreter.joptions.config.interpreter.VerboseLevel>all</org.lara.interpreter.joptions.config.interpreter.VerboseLevel>
     </entry>
     <entry>
       <string>Disable Remote Dependencies</string>

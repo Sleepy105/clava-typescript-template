@@ -1,4 +1,6 @@
-//import Query from "weaver.Query";
+import * as T from "./Test.js"; //  && mv dist/main.js dist/main.mjs
+laraImport("weaver.Query");
+
 var obj = {
     name: "Hello World!!!",
     foo: "bar",
@@ -8,6 +10,7 @@ var obj = {
 
 function main(): void {
     console.log("Hello World\n");
+    T.test();
 
     /*
      */
@@ -16,3 +19,5 @@ function main(): void {
         console.log($fn);
     }
 }
+
+main();

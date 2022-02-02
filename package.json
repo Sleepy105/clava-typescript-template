@@ -1,12 +1,21 @@
 {
+    "name": "clava-custom-script",
+    "displayName": "Clava Custom Script",
+    "description": "Clava custom script template",
+    "version": "0.0.1",
     "scripts": {
         "run": "npm start",
         "start": "clava -c Clava-Options",
-        "prestart": "npm run build",
-        "build": "tsc && cp src/*.lara dist/",
-        "clean": "rm -r ./dist"
+        "build": "tsc && mv dist/main.js dist/main.mjs",
+        "postbuild": "find src/ -name '*.lara' | xargs cp -t dist/ || true",
+        "clean": "rm -r ./dist/**",
+        "prebuild": "npm run clean",
+        "pack": "webpack"
     },
-    "dependencies": {
-        "typescript": "^4.4.3"
+    "dependencies": {},
+    "type": "module",
+    "devDependencies": {
+        "typescript": "^4.5.4",
+        "@types/node": "^17.0.9"
     }
 }
