@@ -12,8 +12,6 @@ function main(): void {
     console.log("Hello World\n");
     T.test();
 
-    /*
-     */
     const $functions = Query.search("function").get();
     for (var $fn of $functions) {
         console.log($fn);
