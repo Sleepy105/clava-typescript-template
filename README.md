@@ -2,8 +2,6 @@
 
 A template project for using Typescript with Clava
 
-# FOR TESTING PURPOSES ONLY. AS OF NOW, CLAVA DOES NOT YET SUPPORT TYPESCRIPT.
-
 ## Usage
 
 ```

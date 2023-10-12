@@ -1,5 +1,0 @@
-import main;
-
-aspectdef MainAspect
-    main();
-end

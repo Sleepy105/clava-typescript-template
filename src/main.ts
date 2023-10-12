@@ -1,21 +1,13 @@
-import * as T from "./Test.js"; //  && mv dist/main.js dist/main.mjs
-laraImport("weaver.Query");
+import { message } from "./helloworld.js";
+import Query from "lara-js/api/weaver/Query.js";
 
-var obj = {
-    name: "Hello World!!!",
-    foo: "bar",
-    bar: 1,
-    baz: true,
-};
+console.log("Clava Typescript Template");
+message();
 
-function main(): void {
-    console.log("Hello World\n");
-    T.test();
-
-    const $functions = Query.search("function").get();
-    for (var $fn of $functions) {
-        console.log($fn);
-    }
+console.log();
+console.log("Functions in source files:");
+console.group();
+for (var $fn of Query.search("function")) {
+    console.log($fn);
 }
-
-main();
+console.groupEnd();
